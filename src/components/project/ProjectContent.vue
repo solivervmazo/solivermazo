@@ -23,10 +23,6 @@ useHead({
   ],
 })
 
-onBeforeMount(()=> {
-    console.log('AHHAHAHH', Md)
-})
-
 </script>
 
 <template>

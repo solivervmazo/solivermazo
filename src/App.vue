@@ -1,29 +1,78 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+	import AppHeader from './components/shared/AppHeader.vue';
+	import AppFooter from './components/shared/FooterCopyright.vue';
+
+	import { inject } from 'vue';
+
+	const appTheme = inject('appTheme')
+
+
 </script>
 
 <template>
-  <div>
-    <router-link :to="{ name: 'Home' }">Home</router-link>
-    &nbsp;
-    <router-link :to="{ name: 'About' }">About</router-link>
-    &nbsp;
-    <router-link :to="{ name: 'Project' }">Project</router-link>
-    <router-view></router-view>
-  </div>
+    <div :class="appTheme" class="pt-0.5 ">
+		<div class="flex flex-col dark:bg-primary-dark min-h-screen">
+			<AppHeader class="flex-none" />
+			<!-- Render active component contents with vue transition -->
+			<div class="flex-grow pt-8">
+				<router-view :theme="appTheme" />
+			</div>
+			<!-- App footer -->
+			<AppFooter class="flex-none" />
+		</div>
+    </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* text-align: center; */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.vue-back-to-top {
+	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
+        duration-500
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-110;
+	border-radius: 50%;
+	font-size: 22px;
+	line-height: 22px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.fade-enter-active {
+	animation: coming 0.4s;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+.fade-leave-active {
+	animation: going 0.4s;
+}
+
+@keyframes going {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+}
+
+@keyframes coming {
+	from {
+		transform: translateX(-10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
 </style>

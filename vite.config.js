@@ -5,6 +5,7 @@ import hljs from 'highlight.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/solivermazo/",
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/] 
