@@ -1,6 +1,6 @@
 <script setup>
 	import AppHeader from './components/shared/AppHeader.vue';
-	import AppFooter from './components/shared/FooterCopyright.vue';
+	import AppFooter from './components/shared/AppFooter.vue';
 
 	import { inject } from 'vue';
 
@@ -18,7 +18,7 @@
 				<router-view :theme="appTheme" />
 			</div>
 			<!-- App footer -->
-			<AppFooter class="flex-none" />
+			<AppFooter class="flex-none pt-5" />
 		</div>
     </div>
 </template>

@@ -5,7 +5,7 @@ import hljs from 'highlight.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/solivermazo/",
+  base: "solivermazo",
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/] 
@@ -31,4 +31,10 @@ export default defineConfig({
       },
     }),
   ],
+  ssgOptions: {
+    includedRoutes(paths, routes) {
+      // exclude all the route paths that contains 'foo'
+      return paths.filter(i => !i.includes('/:pathMatch(.*)*'))
+    },
+  },
 })

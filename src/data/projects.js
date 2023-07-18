@@ -12,17 +12,17 @@ const repos = {
 	kaggle: {
 		name: 'Kaggle',
 		icon: 'kaggle',
-		iconSet: 'fontawesome',
+		set: 'fab',
 	},
 	github: {
 		name: 'Github',
 		icon: 'github',
-		iconSet: 'feathericons',
+		set: 'fab',
 	},
 	bigquery: {
 		name: 'BigQuery',
 		icon: 'google',
-		iconSet: 'fontawesome',
+		set: 'fab',
 	}
 }
 

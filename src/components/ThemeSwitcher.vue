@@ -5,6 +5,7 @@ const appTheme = inject('appTheme')
 
 function toggleTheme() {
 	appTheme.value = (appTheme.value == 'light' ? 'dark' : 'light');
+	if(localStorage) localStorage.setItem('theme', appTheme.value)
 }
 </script>
 
