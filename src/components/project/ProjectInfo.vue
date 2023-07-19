@@ -1,13 +1,15 @@
 <script setup>
 import { inject } from 'vue';
 import { capitalize } from '../../mixins/strings.js';
+import { socshares as sochareData, getShareLink } from '../../data/socmeds';
 
 const { project } = defineProps({
 	project: Object
 })
 
-const { linkClass } = {
-	linkClass: inject('linkClass')
+const { linkClass, socshares } = {
+	linkClass: inject('linkClass'),
+	socshares: sochareData
 }
 
 </script>
@@ -24,8 +26,8 @@ const { linkClass } = {
 					class="font-general-regular text-ternary-dark dark:text-ternary-light">
 					<span>{{ info.title }}: </span>
 					<a href="#" :class="info.title == 'Website' || info.title == 'Phone'
-							? 'hover:underline cursor-pointer'
-							: ''
+						? 'hover:underline cursor-pointer'
+						: ''
 						" aria-label="Project Website and Phone">{{ info.details }}</a>
 				</li>
 			</ul>
@@ -72,6 +74,17 @@ const { linkClass } = {
 			<p class="font-general-regular text-primary-dark dark:text-ternary-light">
 				{{ project.details.tags.tags.join(', ') }}
 			</p>
+		</div>
+		<p class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2">
+			Share
+		</p>
+		<div class="flex items-center gap-3 mt-5">
+			<a v-for="social in socshares" :key="social.id" :network="social.network"
+				target="_blank"
+				:href="getShareLink(social.network , `http://solivervmazo.github.io/solivermazo/${project.project}`, project.title)">
+				<font-awesome-icon :icon="[social.set, social.icon]"
+					class="w-4 lg:w-5 h-4 lg:h-5 text-ternary-dark dark:text-ternary-light"></font-awesome-icon>
+			</a>
 		</div>
 	</div>
 </template>

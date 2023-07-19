@@ -5,6 +5,11 @@ const sources = {
 		id: 'coursera',
 		name: 'Coursera.org',
 		url: 'https://www.coursera.org/',
+	},
+	youtube: {
+		id: 'youtube',
+		name: 'Youtube.com',
+		url: 'https://www.youtube.com/',
 	}
 }
 
@@ -235,6 +240,48 @@ const projects = [
 			md: 'README'
 		},
 		link: false
+	},
+	{
+		id: 5,
+		dir: "london_bike_eda",
+		project: 'london-bike-eda-dataviz',
+		title: 'London Bike Sharing - EDA with Python',
+		category: 'Data Analysis',
+		img: 'cover.png' ,
+		type: 'youtube project',
+		date: 'July 2023',
+		details: {
+			client: false,
+			guided: {
+				heading: 'About Project',
+				details: {
+					provider: sources['youtube'],
+					title :{
+						name: `Data Analyst Portfolio Project | From data gathering to data visualisation`,
+						url: 'https://youtu.be/nl9eZl1IOKI'
+					},
+				}
+			},
+			objective: {
+				key: 'objective',
+				heading: 'Objective',
+				text: `End to end data analyst portfolio project from gathering data, through data exploration, assessment and manipulation using the pandas library in Python, to data visualisation in Tableau.`,
+			},
+			tags: {
+				key: 'tags',
+				heading: 'Tools & Technologies',
+				tags: ['Data Analysis', 'Python', 'Data Science', 'Tableau']
+			}
+		},
+		src: {
+			coverImg: 'cover.png',
+			images: [],
+			md: 'EDA'
+		},
+		link: {
+			...repos.kaggle,
+			url: 'https://www.kaggle.com/solivermazo/london-bike-sharing-eda'
+		}
 	}
 ];
 

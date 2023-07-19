@@ -21,7 +21,8 @@
     "highlight.js": "^11.8.0",
     "vite-plugin-vue-markdown": "^0.23.5",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue-router": "^4.2.4",
+    "vue-social-sharing": "^4.0.0-alpha4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",

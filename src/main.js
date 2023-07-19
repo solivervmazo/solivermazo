@@ -3,6 +3,7 @@ import App from './App.vue';
 import AppButton from './components/reusable/Button.vue';
 import "./assets/styles/main.css";
 import { ViteSSG } from 'vite-ssg';
+import VueSocialSharing from 'vue-social-sharing';
 import { router } from './route.js';
 import { ref } from 'vue';
 
@@ -10,11 +11,12 @@ import { ref } from 'vue';
 // Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faKaggle, faGoogle, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faKaggle, faGoogle, faGithub, faLinkedin, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faMoon, faSun, faEnvelope, faMap, faClock, faLightbulb } from '@fortawesome/free-regular-svg-icons';
 library.add(
-    faKaggle, faXmark, faGoogle , faMoon, faSun, faGithub, faLinkedin, faEnvelope, faMap, faClock, faLightbulb )
+    faKaggle, faXmark, faGoogle , faMoon, faSun, faGithub, faLinkedin, 
+    faEnvelope, faMap, faClock, faLightbulb, faFacebookSquare, faTwitter )
 
 
 export const createApp = ViteSSG(
@@ -30,6 +32,7 @@ export const createApp = ViteSSG(
         }catch (error) {
             
         }
+        app.use(VueSocialSharing)
         app.provide( 'appTheme', appTheme )
             .provide('linkClass' , 'text-indigo-600 dark:text-indigo-300')
             .provide('imgProjectErrorUrl', new URL(`../src/assets/images/placeholder-project.jpg`, import.meta.url).href)
