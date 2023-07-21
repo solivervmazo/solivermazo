@@ -18,6 +18,7 @@ const repos = {
 		name: 'Kaggle',
 		icon: 'kaggle',
 		set: 'fab',
+		logo: 'https://www.kaggle.com/static/images/site-logo.svg'
 	},
 	github: {
 		name: 'Github',
@@ -28,6 +29,12 @@ const repos = {
 		name: 'BigQuery',
 		icon: 'google',
 		set: 'fab',
+	},
+	tableau: {
+		name: 'Tableau',
+		icon: false,
+		set: false,
+		logo: 'https://public.tableau.com/app/assets/tableau-public-logo-rgb.07774149.svg'
 	}
 }
 
@@ -248,6 +255,7 @@ const projects = [
 		title: 'London Bike Sharing - EDA with Python',
 		category: 'Data Analysis',
 		img: 'cover.png' ,
+		metaImg: 'meta.png' ,
 		type: 'youtube project',
 		date: 'July 2023',
 		details: {
@@ -275,8 +283,12 @@ const projects = [
 		},
 		src: {
 			coverImg: 'cover.png',
-			images: [],
+			images: ['cover.png', 'heatmap.png', 'hour.png'],
 			md: 'EDA'
+		},
+		viz: {
+			...repos.tableau,
+			url: 'https://public.tableau.com/views/LondonBikeRidesViz/LondonBikeRides?:language=en-US&:display_count=n&:origin=viz_share_link'
 		},
 		link: {
 			...repos.kaggle,

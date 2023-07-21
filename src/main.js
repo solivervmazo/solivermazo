@@ -13,10 +13,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faKaggle, faGoogle, faGithub, faLinkedin, faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faMoon, faSun, faEnvelope, faMap, faClock, faLightbulb } from '@fortawesome/free-regular-svg-icons';
+import { faMoon, faSun, faEnvelope, faMap, faClock, faLightbulb, faEye } from '@fortawesome/free-regular-svg-icons';
 library.add(
     faKaggle, faXmark, faGoogle , faMoon, faSun, faGithub, faLinkedin, 
-    faEnvelope, faMap, faClock, faLightbulb, faFacebookSquare, faTwitter )
+    faEnvelope, faMap, faClock, faLightbulb, faFacebookSquare, faTwitter, faEye )
 
 
 export const createApp = ViteSSG(

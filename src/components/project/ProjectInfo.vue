@@ -65,7 +65,6 @@ const { linkClass, socshares } = {
 				{{ project.details.objective.text }}
 			</p>
 		</div>
-
 		<!-- Single project technologies -->
 		<div v-if="project.details.tags" class="mb-7">
 			<p class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2">
@@ -75,6 +74,7 @@ const { linkClass, socshares } = {
 				{{ project.details.tags.tags.join(', ') }}
 			</p>
 		</div>
+
 		<p class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2">
 			Share
 		</p>

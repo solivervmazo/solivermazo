@@ -5,6 +5,7 @@ function creatMeta(
     title,
     img = 'https://solivervmazo.github.io/solivermazo/solivervmazo.png'
 ) {
+    if(!img)  img = 'https://solivervmazo.github.io/solivermazo/solivervmazo.png'
     return [
         {
           name: 'description',
