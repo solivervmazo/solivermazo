@@ -1,4 +1,4 @@
-import{u as n,o as a,c as t,a as e}from"./app-d90d18c8.js";const o={class:"markdown-body"},l=e(`<pre class="hljs"><code><span class="hljs-comment"># This Python 3 environment comes with many helpful analytics libraries installed</span>
+import{u as n,o as a,c as t,a as e}from"./app-0c0763ab.js";const o={class:"markdown-body"},l=e(`<pre class="hljs"><code><span class="hljs-comment"># This Python 3 environment comes with many helpful analytics libraries installed</span>
 <span class="hljs-comment"># It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python</span>
 <span class="hljs-comment"># For example, here&#39;s several helpful packages to load</span>
 
