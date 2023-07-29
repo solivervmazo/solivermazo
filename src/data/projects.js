@@ -29,6 +29,7 @@ const repos = {
 		name: 'BigQuery',
 		icon: 'google',
 		set: 'fab',
+		logo: 'https://public.tableau.com/app/assets/tableau-public-logo-rgb.07774149.svg'
 	},
 	tableau: {
 		name: 'Tableau',
@@ -294,7 +295,147 @@ const projects = [
 			...repos.kaggle,
 			url: 'https://www.kaggle.com/solivermazo/london-bike-sharing-eda'
 		}
-	}
+	},
+	{
+		id: 6,
+		dir: "mrfat",
+		project: 'market-research-for-ads-target',
+		title: 'Market Research For Ads Target',
+		category: 'Data Analysis',
+		img: 'cover.png' ,
+		type: 'soliver mazo',
+		date: 'July 2023',
+		details: {
+			client: false,
+			guided: false,
+			objective: {
+				key: 'objective',
+				heading: 'Objective',
+				text: `End to end data analyst portfolio project using kaggle for EDA to data visualisation in Tableau.`,
+			},
+			tags: {
+				key: 'tags',
+				heading: 'Tools & Technologies',
+				tags: ['Data Analysis', 'SQL', 'Python', 'Data Science', 'Kaggle', 'Tableau']
+			}
+		},
+		src: {
+			coverImg: 'cover.png',
+			images: ['nb.png', 'viz.png'],
+			md: 'EDA'
+		},
+		viz: {
+			...repos.tableau,
+			url: 'https://public.tableau.com/views/MarketResearchForAdsTarget/Main?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link'
+		},
+		link: {
+			...repos.kaggle,
+			url: 'https://www.kaggle.com/code/solivermazo/market-research-for-ads-target-eda'
+		}
+	},
+	{
+		id: 7,
+		dir: "liquorsales",
+		project: 'iowa-liquor-sales',
+		title: 'Iowa Liquor Sales 2012-2017',
+		category: 'Data Analysis',
+		img: 'cover.png' ,
+		type: 'soliver mazo',
+		date: 'July 2023',
+		details: {
+			client: false,
+			guided: false,
+			objective: {
+				key: 'objective',
+				heading: 'Objective',
+				text: `Dashboard creation in Tableau using Iowa Liquor Sales(2012-2017) data set from kaggle.`,
+			},
+			tags: {
+				key: 'tags',
+				heading: 'Tools & Technologies',
+				tags: ['Data Analysis', 'SQL', 'Tableau']
+			}
+		},
+		src: {
+			coverImg: 'cover.png',
+			images: ['1.png', '2.png'],
+			md: 'EDA'
+		},
+		viz: {
+			...repos.tableau,
+			url: 'https://public.tableau.com/views/IowaLiquorSales2012-2017/Main?:language=en-US&:display_count=n&:origin=viz_share_link'
+		},
+	},
+	{
+		id: 8,
+		dir: "usflights2015",
+		project: 'us-flight-delays-and-cancellations-2015',
+		title: '2015 Flight Delays and Cancellations US',
+		category: 'Data Analysis',
+		img: 'cover.png' ,
+		type: 'soliver mazo',
+		date: 'July 2023',
+		details: {
+			client: false,
+			guided: false,
+			objective: {
+				key: 'objective',
+				heading: 'Objective',
+				text: `Dashboard creation in Tableau using 2015 Flight Delays and Cancellations US data set from kaggle.`,
+			},
+			tags: {
+				key: 'tags',
+				heading: 'Tools & Technologies',
+				tags: ['Data Analysis', 'Tableau']
+			}
+		},
+		src: {
+			coverImg: 'cover.png',
+			images: ['cover.png'],
+			md: 'EDA'
+		},
+		viz: {
+			...repos.tableau,
+			url: 'https://public.tableau.com/views/2015FlightDelaysandCancellationsUS/Main?:language=en-US&:display_count=n&:origin=viz_share_link'
+		},
+	},
+	{
+		id: 79,
+		dir: "liquorsalesv2",
+		project: 'iowa-liquor-sales-v2',
+		title: 'Iowa Liquor Sales 2012-2017 V2',
+		category: 'Data Analysis',
+		img: 'cover.png' ,
+		type: 'soliver mazo',
+		date: 'July 2023',
+		details: {
+			client: false,
+			guided: false,
+			objective: {
+				key: 'objective',
+				heading: 'Objective',
+				text: `Dashboard creation in Tableau using Iowa Liquor Sales(2012-2017) data set from kaggle.`,
+			},
+			tags: {
+				key: 'tags',
+				heading: 'Tools & Technologies',
+				tags: ['Data Analysis', 'Python', 'SQL', 'Tableau']
+			}
+		},
+		src: {
+			coverImg: 'cover.png',
+			images: ['cover.png','eda1.png', 'eda2.png'],
+			md: 'EDA'
+		},
+		viz: {
+			...repos.tableau,
+			url: 'https://public.tableau.com/views/IowaLiquorSalesV2/Main?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link'
+		},
+		link: {
+			...repos.kaggle,
+			url: 'https://www.kaggle.com/code/solivermazo/iowa-liquor-sales-2015-eda'
+		}
+	},
 ];
 
 function getProject(projectName) {

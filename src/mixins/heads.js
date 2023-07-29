@@ -42,8 +42,8 @@ function creatMeta(
           content: 'summary_large_image' ,
         },
         {
-          property: 'https://solivervmazo.github.io/solivermazo/' + url,
-          content: url,
+          property: 'url',
+          content: 'https://solivervmazo.github.io/solivermazo/' + url,
         },
         {
           property: 'twitter:title',

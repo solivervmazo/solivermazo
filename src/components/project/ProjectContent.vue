@@ -54,7 +54,7 @@ useHead({
         <ProjectInfo :project="project" />
       </div>
       <div class="w-full sm:w-3/4 text-left mt-10 text-sm sm:mt-0 bg-slate-100 p-3 rounded-md overflow-auto max-h-screen">
-        <div v-if="project.src || project.viz" class="mb-2 flex flex-row justify-end text-right mb-2 font-general-regular text-primary-dark dark:text-ternary-light bg-slate-100 ">
+        <div v-if="project.link || project.viz" class="mb-2 flex flex-row justify-end text-right mb-2 font-general-regular text-primary-dark dark:text-ternary-light bg-slate-100 ">
           <font-awesome-icon 
             :icon="[ 'far' , 'eye']"
             class="w-3.5 h-3.5 text-black">
