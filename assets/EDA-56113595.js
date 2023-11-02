@@ -1,4 +1,4 @@
-import{u as a,o as n,c as l,a as p}from"./app-fd13523a.js";const e={class:"markdown-body"},t=p(`<pre class="hljs"><code><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+import{u as a,o as n,c as l,a as p}from"./app-d176f5ae.js";const e={class:"markdown-body"},t=p(`<pre class="hljs"><code><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
 <span class="hljs-keyword">from</span> ydata_profiling <span class="hljs-keyword">import</span> ProfileReport
 
 <span class="hljs-keyword">import</span> os
